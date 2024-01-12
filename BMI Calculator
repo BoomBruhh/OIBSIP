@@ -1,0 +1,15 @@
+height=float(input("Enter Height in meter:"))
+weight=float(input("Enter weight in KG's:"))
+height_meter=height/100
+BMI=weight/(height_meter**2)
+print("BMI value=",BMI)
+if(BMI<16):
+    print("You are too much underweight",BMI)
+elif(BMI>=16 and BMI<18.5):
+    print("YOu are underweight",BMI)
+elif(BMI>=18.5 and BMI<24):
+    print("You are proper Healthy",BMI)
+elif(BMI>=25 and BMI<30):
+    print("You are overweight",BMI)
+elif(BMI>=30):
+    print("You are too much overweight",BMI)
